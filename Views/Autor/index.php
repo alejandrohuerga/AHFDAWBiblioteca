@@ -73,4 +73,9 @@
         </div>
     </div>
 </div>
+<footer>
+    <a href="http://biblioteca.local.alejandrohuefer.ieslossauces.es/doc/phpdoc/index.html">PHPDOC</a>
+    <a href="http://biblioteca.local.alejandrohuefer.ieslossauces.es/doc/oxygen/html/">OXYGEN</a>
+
+</footer>
 <?php include "Views/Templates/footer.php"; ?>
