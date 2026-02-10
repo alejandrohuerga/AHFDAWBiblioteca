@@ -1,0 +1,41 @@
+\doxysection{index.\+php}
+\hypertarget{index_8php_source}{}\label{index_8php_source}\doxymbox{\hyperlink{index_8php}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00001}00001\ <?php}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00002}00002\ \ \ \ \ require\_once\ \textcolor{stringliteral}{"{}Config/Config.php"{}};}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00003}00003\ \ \ \ \ require\_once\ \textcolor{stringliteral}{"{}Config/Helpers.php"{}};}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00004}\doxymbox{\hyperlink{index_8php_ac305f4e1c69e186235154667ca03d8ff}{00004}}\ \ \ \ \ \doxymbox{\hyperlink{index_8php_ac305f4e1c69e186235154667ca03d8ff}{\$ruta}}\ =\ !empty(\$\_GET[\textcolor{stringliteral}{'url'}])\ ?\ \$\_GET[\textcolor{stringliteral}{'url'}]\ :\ \textcolor{stringliteral}{"{}Home/index"{}};}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00005}\doxymbox{\hyperlink{index_8php_ac1361b8d873c1f927b21b809f99e5752}{00005}}\ \ \ \ \ \doxymbox{\hyperlink{index_8php_ac1361b8d873c1f927b21b809f99e5752}{\$array}}\ =\ explode(\textcolor{stringliteral}{"{}/"{}},\ \doxymbox{\hyperlink{index_8php_ac305f4e1c69e186235154667ca03d8ff}{\$ruta}});}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00006}\doxymbox{\hyperlink{index_8php_a388ef7b1db5e6f728e63cee704ce6e23}{00006}}\ \ \ \ \ \doxymbox{\hyperlink{index_8php_a388ef7b1db5e6f728e63cee704ce6e23}{\$controller}}\ =\ \doxymbox{\hyperlink{index_8php_ac1361b8d873c1f927b21b809f99e5752}{\$array}}[0];}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00007}\doxymbox{\hyperlink{index_8php_a3e5767b529ea86d747b087743c7a8b57}{00007}}\ \ \ \ \ \doxymbox{\hyperlink{index_8php_a3e5767b529ea86d747b087743c7a8b57}{\$metodo}}\ =\ \textcolor{stringliteral}{"{}index"{}};}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00008}\doxymbox{\hyperlink{index_8php_ae753748688edb11c9cda7970a9d9a298}{00008}}\ \ \ \ \ \doxymbox{\hyperlink{index_8php_ae753748688edb11c9cda7970a9d9a298}{\$parametro}}\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00009}00009\ \ \ \ \ \textcolor{keywordflow}{if}\ (!empty(\doxymbox{\hyperlink{index_8php_ac1361b8d873c1f927b21b809f99e5752}{\$array}}[1]))\ \{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00010}00010\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!empty(\doxymbox{\hyperlink{index_8php_ac1361b8d873c1f927b21b809f99e5752}{\$array}}[1]\ !=\ \textcolor{stringliteral}{"{}"{}}))\ \{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00011}00011\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{index_8php_a3e5767b529ea86d747b087743c7a8b57}{\$metodo}}\ =\ \doxymbox{\hyperlink{index_8php_ac1361b8d873c1f927b21b809f99e5752}{\$array}}[1];}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00012}00012\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00013}00013\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00014}\doxymbox{\hyperlink{index_8php_a188b77574ec1ac59ca09951261da487e}{00014}}\ \ \ \ \ \textcolor{keywordflow}{if}\ (!empty(\doxymbox{\hyperlink{index_8php_ac1361b8d873c1f927b21b809f99e5752}{\$array}}[2]))\ \{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00015}00015\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!empty(\doxymbox{\hyperlink{index_8php_ac1361b8d873c1f927b21b809f99e5752}{\$array}}[2]\ !=\ \textcolor{stringliteral}{"{}"{}}))\ \{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00016}00016\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\$i=2;\ \$i\ <\ count(\doxymbox{\hyperlink{index_8php_ac1361b8d873c1f927b21b809f99e5752}{\$array}});\ \$i++)\ \{\ }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00017}00017\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{index_8php_ae753748688edb11c9cda7970a9d9a298}{\$parametro}}\ .=\ \doxymbox{\hyperlink{index_8php_ac1361b8d873c1f927b21b809f99e5752}{\$array}}[\$i].\ \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00018}00018\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00019}00019\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{index_8php_ae753748688edb11c9cda7970a9d9a298}{\$parametro}}\ =\ trim(\doxymbox{\hyperlink{index_8php_ae753748688edb11c9cda7970a9d9a298}{\$parametro}},\ \textcolor{stringliteral}{"{},"{}});}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00020}00020\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00021}00021\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00022}00022\ \ \ \ \ require\_once\ \textcolor{stringliteral}{"{}Config/App/Autoload.php"{}};}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00023}\doxymbox{\hyperlink{index_8php_a934bfb44f1cd04741c2a59af54e72af6}{00023}}\ \ \ \ \ \doxymbox{\hyperlink{index_8php_a934bfb44f1cd04741c2a59af54e72af6}{\$dirControllers}}\ =\ \textcolor{stringliteral}{"{}Controllers/"{}}.\$controller.\textcolor{stringliteral}{"{}.php"{}};}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00024}00024\ \ \ \ \ \textcolor{keywordflow}{if}\ (file\_exists(\doxymbox{\hyperlink{index_8php_a934bfb44f1cd04741c2a59af54e72af6}{\$dirControllers}}))\ \{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00025}00025\ \ \ \ \ \ \ \ \ require\_once\ \doxymbox{\hyperlink{index_8php_a934bfb44f1cd04741c2a59af54e72af6}{\$dirControllers}};}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00026}00026\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{index_8php_a388ef7b1db5e6f728e63cee704ce6e23}{\$controller}}\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{index_8php_a388ef7b1db5e6f728e63cee704ce6e23}{\$controller}}();}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00027}00027\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (method\_exists(\doxymbox{\hyperlink{index_8php_a388ef7b1db5e6f728e63cee704ce6e23}{\$controller}},\ \doxymbox{\hyperlink{index_8php_a3e5767b529ea86d747b087743c7a8b57}{\$metodo}}))\ \{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{index_8php_a388ef7b1db5e6f728e63cee704ce6e23}{\$controller}}-\/>\$metodo(\doxymbox{\hyperlink{index_8php_ae753748688edb11c9cda7970a9d9a298}{\$parametro}});}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00029}00029\ \ \ \ \ \ \ \ \ \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ header(\textcolor{stringliteral}{'Location:'}\ .\ base\_url\ .\ \textcolor{stringliteral}{'Configuracion/Error'});}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00031}00031\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00032}\doxymbox{\hyperlink{index_8php_af2d7d7c421dc9d20e8ded7a7eb95cf9a}{00032}}\ \ \ \ \ \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00033}00033\ \ \ \ \ \ \ \ \ header(\textcolor{stringliteral}{'Location:'}\ .\ base\_url\ .\ \textcolor{stringliteral}{'Configuracion/Error'});}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00034}00034\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{index_8php_source_l00036}00036\ ?>}
+
+\end{DoxyCode}
