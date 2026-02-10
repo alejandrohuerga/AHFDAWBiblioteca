@@ -27,6 +27,11 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `autor`
 --
 
+CREATE DATABASE IF NOT EXISTS DBBiblioteca;
+
+USE DBBiblioteca;
+GRANT ALL ON DBBiblioteca .* TO 'userBiblioteca'@'%' IDENTIFIED BY 'paso';
+
 CREATE TABLE `autor` (
   `id` int(11) NOT NULL,
   `autor` varchar(150) NOT NULL,

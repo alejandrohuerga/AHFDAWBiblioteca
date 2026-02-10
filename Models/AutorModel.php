@@ -1,4 +1,15 @@
 <?php
+/**
+ * Clase AutorModel que extiende de Query.
+ * Clase que representa un Autor de un libro.
+ * 
+ * Tiene los disferentes métodos para poder realizar diferentes acciones.
+ * 
+ * @author Alejandro De la Huerga Fernández
+ * @since 10/02/2026
+ * @version 1.0.0
+ * 
+ */
 class AutorModel extends Query
 {
     public function __construct()
